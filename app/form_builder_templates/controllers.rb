@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
 module App
-  module Controllers
+  module FormBuilderTemplates
+    module Controllers
 
+    end
   end
 end
 
