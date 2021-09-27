@@ -13,7 +13,9 @@ module App
 
     configure :development do
       register Sinatra::Reloader
+      register Sinatra::JSON
 
+      also_reload '/app/form_builder_templates/controllers/*'
       after_reload do
         puts 'reloaded'
       end

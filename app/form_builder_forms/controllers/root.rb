@@ -7,6 +7,8 @@ module App
   module FormBuilderForms
     module Controllers
       class Root < Base
+        register Sinatra::Reloader
+
         use Sinatra::Router do
           mount App::FormBuilderForms::Controllers::FormsController
         end

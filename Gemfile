@@ -19,9 +19,9 @@ gem 'sinatra-contrib', '~> 2.1'
 gem 'sinatra-router', '~> 0.2.4'
 
 group :development, :test do
-  gem 'sinatra-rake-routes', '~> 0.0.4'
   gem 'byebug', '~> 11.1', '>= 11.1.3'
   gem 'rspec', '~> 3.10'
+  gem 'sinatra-rake-routes', '~> 0.0.4'
 end
 
 group :development do

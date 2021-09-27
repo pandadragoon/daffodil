@@ -9,7 +9,13 @@ module App
       class TemplatesController < Base
         namespace '/api/form_builder/templates' do
           get '/?' do
-            'TemplatesController'
+            res = {
+              module: 'form_builder_templates',
+              controller: 'templates_controller',
+              namespace: '/api/form_builder/templates',
+              route: '/?'
+            }
+            json res
           end
         end
       end
